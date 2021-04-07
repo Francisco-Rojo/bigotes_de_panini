@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>  
+	<meta charset="UTF-8">
+	<meta name="keywords" content="paninis,frapes,cafe,crepas,web, menus paginas web, paginas webs xochimilco, web menus,
+	desarrollo web xochimilco, apps xochimilco, apps, android xochimilco, menus vistuales">
+	<meta name="description" content="desarrollo y creacion de paginas webs y aplicaciones moviles desde xochimilco">
+	<meta name="author" content="Francisco y equipo AjoloTech">
+  	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  	<!-- ICONO -->
+  	<link rel="shortcut icon" href="img/bigote.svg" />
+
+  	<!-- FUENTES GOOGLE-->
+  	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+
+  	<!-- ARCHIVOS CSS BOOTSTRAP 4 -->
+  	<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
+
+  	<!-- ARCHIVOS CSS PERSONALIZADOS -->
+  	<link type="text/css" rel="stylesheet" href="css/estilos.css">
+  	<title>Los Bigotes de Panini</title>
+</head>
+<body>
+
+	<header class="contenedorLogo container-fluid">
+		<div class="row ">
+			<div class="col-12 d-flex justify-content-center">
+				<img class="w-50 p-3 " src="img/logoWhite.png">
+			</div>
+		</div>
+	</header>
+
+	<article class="contenedorMenu container mt-1 pt-4 px-3">
+		<section class="row">
+			<div class="col-12">
+				<h1 class="titulo text-center">Los Bigotes de Panini</h1>
+				<h2 class="tituloDos text-center">Crepas, paninis, café y frapes.</h2>
+				<p class="text-center mt-3">Es un negocio emergente, donde podras consumir unos ricos
+				postres en uno de los principales lugares turisticos de la ciudad de México.</p>
+			</div>
+		</section>
+		<hr>
+		<section class="row">
+			<div class="col-12">
+				<h3 class="tituloTres text-center">Menú de los bigotes de panini:</h3>
+			</div>
+		</section>
+		<section class="titulosBotones row mt-2">
+			
+			<div class="col-12 d-flex justify-content-center">
+				<button id="crepasDulces" type="button" class="btn btn-danger btn-lg ">Crepas Dulces</button>
+			</div>
+			<div class="col-12 d-flex mt-2 justify-content-center">
+				<button id="crepasSaladas" type="button" class="btn btn-danger btn-lg ">Crepas Saladas</button>
+			</div>
+			<div class="col-12 d-flex mt-2 justify-content-center">
+				<button id="paninis" type="button" class="btn btn-danger btn-lg px-5 ">Paninis</button>
+			</div>
+			<div class="col-12 d-flex mt-2 justify-content-center">
+				<button id="cafe" type="button" class="btn btn-danger btn-lg px-5 ">Café</button>
+			</div>
+			<div class="col-12 d-flex justify-content-center mt-2">
+				<button id="menuCompleto" type="button" class="btn btn-danger btn-lg">Menú Completo</button>
+			</div>
+		</section>
+
+		<div class="row  mt-3" id="menus">
+			<div id="uno" class="col-12 pt-2 text-center text-uppercase font-weight-bold" style="display: none;">
+				<h4 class="text-center font-weight-bold">crepas dulces</h4>
+				<p> cajeta - $35 <br>
+				cajeta nuez - $40 <br>
+				cajeta plátano - $40 <br>
+				nutella - $40<br>
+				nutella nuez - $45 <br>
+				nutella platano - $45 <br>
+				philadelphia fresa - $45 <br>
+				philadelphia zarzamora - $45 <br>
+				crepa con helado - $50</p>		
+			</div>
+
+			<div id="dos" class="col-12 pt-2 text-center text-uppercase font-weight-bold" style="display: none;">
+				<h4 class="text-center font-weight-bold">crepas saladas</h4>
+				<p> philadelphia - $45 <br>
+				manchego jamón - $45 <br>
+				philadelphia manchego jamón - $50 <br>
+				3 quesos jamón - $55
+			</div>
+
+			<div id="tres" class="col-12 pt-2 text-center text-uppercase font-weight-bold" style="display: none;">
+				<h4 class="text-center font-weight-bold">paninis</h4>
+				<p> pechuga de pavo - $40 <br>
+				chorizo de pamplona - $40 <br>
+				bola de cerveza - $40 <br>
+				jamón serrano - $45<br>
+				carne al pastor - $50 
+			</div>
+
+			<div id="cuatro" class="col-12 pt-2 text-center text-uppercase font-weight-bold" style="display: none;">
+				<h4 class="text-center font-weight-bold">cafés</h4>
+				<p> americano - $20ch - $25grn<br>
+				capuchino - $25ch  - $30grn<br>
+				mocaccino - $25ch  - $30grn<br>
+				chocolate - $25ch  - $30grn<br>
+				té - $15ch  - $20grn<br>
+				frapes - $30grn
+			</div>
+
+			<div class="col-12 d-flex justify-content-center">
+				<img id="cero" src="img/menu.jpg" class="w-100" style="display: block;">
+			</div>
+		</div>
+<br>
+		<div class="row">
+			<iframe class="w-100 mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3766.823036291831!2d-99.0749490853326!3d19.24654268699031!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ce05bc37cccdb1%3A0x24127d05eb31b480!2sLos%20bigotes%20de%20panini!5e0!3m2!1ses-419!2smx!4v1617061828348!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+		</div>
+	</article>
+
+	<!-- SECCION PIE DE PÁGINA -->
+	<footer class="pie-de-pagina text-center bg-dark text-white">
+	  <div class="container">
+	    <p class="m-0 py-3">Copyright © 2021. Todos los derechos reservados por <a href="http://ajolotech.net/">Ajolotech</a> </p>
+	  </div>
+	</footer>
+
+	<!-- ARCHIVOS BOOTSTRAP JAVASCRIPT -->
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+
+	<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

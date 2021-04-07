@@ -1,0 +1,53 @@
+* { margin: 0; padding: 0; }
+
+body {
+	/*background-color: #922B21 ;*/
+	background-color: #640B0B;  
+	/*background-color: #EAECEE; */
+}
+
+
+.contenedorLogo {
+	background-image: url(../img/fondo.jpg);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+
+} 
+
+.titulo, .tituloTres, .titulosBotones, h4  {
+	font-family: 'Pacifico', cursive;
+}
+
+.tituloDos {
+	font-family: 'Open Sans', sans-serif;	
+}
+
+.contenedorMenu{
+	background-color: white;
+	font-family: 'Open Sans', sans-serif;
+	box-shadow: 12px 10px #212F3C;
+}
+
+hr {
+	background-color: black;
+	margin-left: 7%;
+	margin-right: 7%;
+}
+
+.btn-danger {
+	background-color: #CD6155;
+	border-color: #CD6155;
+}
+
+#uno, #dos, #tres, #cuatro {
+	background-image: url(../img/rayas.jpg);
+}
+
+.mapa {
+	height: 180px;
+}
+
+footer {
+	font-size: 12px;
+}
