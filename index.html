@@ -26,6 +26,23 @@
 </head>
 <body>
 
+	<nav class="navbar navbar-dark navbar-expand-md">
+		<div class="container">
+			<button type="button" class="navbar-toggler mr-auto ml-auto" data-toggle="collapse" 
+					data-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false">
+			<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse  d-lg-flex justify-content-md-center" id="menuPrincipal">
+				<ul class="navbar-nav text-center"> 
+					<!--li><a class="navbar-brand nav-link disabled">Quienes somos?</a></li -->
+					<!--li><a href="#contacto" class="navbar-brand nav-link active">Contacto</a></li -->
+					<li><a href="#" data-toggle="modal" class="navbar-brand nav-link active" 
+						data-target="#ventanaModa">Contacto y Redes Sociales</a></li>
+				</ul> 
+			</div>
+		</div>
+	</nav>
 	<header class="contenedorLogo container-fluid">
 		<div class="row ">
 			<div class="col-12 d-flex justify-content-center">
@@ -79,7 +96,11 @@
 				nutella platano - $45 <br>
 				philadelphia fresa - $45 <br>
 				philadelphia zarzamora - $45 <br>
-				crepa con helado - $50</p>		
+				crepa con helado - $50</p>
+
+				<div class="row d-flex justify-content-center" >
+					<img class="img-fluid px-3" src="img/1.jpg" style="border-radius: 100px;">
+				</div>		
 			</div>
 
 			<div id="dos" class="col-12 pt-2 text-center text-uppercase font-weight-bold" style="display: none;">
@@ -87,7 +108,10 @@
 				<p> philadelphia - $45 <br>
 				manchego jamón - $45 <br>
 				philadelphia manchego jamón - $50 <br>
-				3 quesos jamón - $55
+				3 quesos jamón - $55</p>
+				<div class="row d-flex justify-content-center" >
+					<img class="img-fluid px-3" src="img/2.jpg" style="border-radius: 100px;">
+				</div>	
 			</div>
 
 			<div id="tres" class="col-12 pt-2 text-center text-uppercase font-weight-bold" style="display: none;">
@@ -96,7 +120,10 @@
 				chorizo de pamplona - $40 <br>
 				bola de cerveza - $40 <br>
 				jamón serrano - $45<br>
-				carne al pastor - $50 
+				carne al pastor - $50 </p>
+				<div class="row d-flex justify-content-center" >
+					<img class="img-fluid px-3" src="img/3.jpg" style="border-radius: 100px;">
+				</div>	
 			</div>
 
 			<div id="cuatro" class="col-12 pt-2 text-center text-uppercase font-weight-bold" style="display: none;">
@@ -106,7 +133,10 @@
 				mocaccino - $25ch  - $30grn<br>
 				chocolate - $25ch  - $30grn<br>
 				té - $15ch  - $20grn<br>
-				frapes - $30grn
+				frapes - $30grn </p>
+				<div class="row d-flex justify-content-center" >
+					<img class="img-fluid px-3" src="img/4.jpg" style="border-radius: 100px;">
+				</div>	
 			</div>
 
 			<div class="col-12 d-flex justify-content-center">
@@ -125,6 +155,31 @@
 	    <p class="m-0 py-3">Copyright © 2021. Todos los derechos reservados por <a href="http://ajolotech.net/">Ajolotech</a> </p>
 	  </div>
 	</footer>
+
+
+		<!--MODAL CONTACTO-->
+	<div class="modal fade mt-5" tabindex="-1" id="ventanaModa"><br><br><br>
+		<div class="modal-dialog ">
+			<div class="modal-content" id="ventana">
+				<div class="modal-header d-flex justify-content-center">
+					<h3 class="modal-title">Contacto y Redes</h3>
+				</div>
+				<div class="modal-body">
+					<p class="text-center"><strong>correo:</strong></p>
+					<p class="text-center">correo_prueba@gmail.com</p>
+				</div>
+				<div class="modal-footer d-flex justify-content-center">
+					<a href="https://api.whatsapp.com/send?phone=525582135552&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Los%20Bigotes%20de%20Panini">
+  						<img id="whatsapp" class="img-fluid" src="img/whatsapp.png">
+  					</a>
+  					<a href="https://www.facebook.com/Los-bigotes-de-panini-104035911701425">
+  						<img id="facebook" class="img-fluid" src="img/facebook.png">
+  					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
 
 	<!-- ARCHIVOS BOOTSTRAP JAVASCRIPT -->
 	<script src="js/jquery-3.3.1.min.js"></script>
