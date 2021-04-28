@@ -6,16 +6,17 @@ body {
 	/*background-color: #EAECEE; */
 }
 
-/*
-.contenedorLogo {
-	background-image: url(../img/fondo.jpg);
-	background-size: 100%;
-	background-repeat: no-repeat;
-} */
 
-.titulo, .tituloTres, .titulosBotones, h4  {font-family: 'Pacifico', cursive;}
 
-.tituloDos {font-family: 'Open Sans', sans-serif;	}
+#menuRedes {
+	border: solid 2px white;
+	border-radius: 10px;
+}
+
+.titulo, .tituloTres, .titulosBotones, h4 {font-family: 'Pacifico', cursive;}
+
+.tituloDos {font-family: 'Open Sans', sans-serif;}
+
 
 .contenedorMenu{
 	background-color: white;
@@ -24,7 +25,7 @@ body {
 }
 
 hr {
-	background-color: black;
+	background-color: #640B0B;
 	margin-left: 7%;
 	margin-right: 7%;
 }

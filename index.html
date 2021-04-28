@@ -4,7 +4,8 @@
 	<meta charset="UTF-8">
 	<meta name="keywords" content="paninis,frapes,cafe,crepas,web, menus paginas web, paginas webs xochimilco, web menus,
 	desarrollo web xochimilco, apps xochimilco, apps, android xochimilco, menus vistuales">
-	<meta name="description" content="desarrollo y creacion de paginas webs y aplicaciones moviles desde xochimilco">
+	<meta name="description" content="Es un negocio emergente, donde podras consumir unos ricos
+				postres en uno de los principales lugares turisticos de la ciudad de México">
 	<meta name="author" content="Francisco y equipo AjoloTech">
   	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -35,17 +36,15 @@
 
 			<div class="collapse navbar-collapse  d-lg-flex justify-content-md-center" id="menuPrincipal">
 				<ul class="navbar-nav text-center"> 
-					<!--li><a class="navbar-brand nav-link disabled">Quienes somos?</a></li -->
-					<!--li><a href="#contacto" class="navbar-brand nav-link active">Contacto</a></li -->
-					<li><a href="#" data-toggle="modal" class="navbar-brand nav-link active" 
-						data-target="#ventanaModa">Contacto y Redes Sociales</a></li>
+					<li><a href="#" data-toggle="modal" class="navbar-brand nav-link active mt-2 p-2" 
+						data-target="#ventanaModa" id="menuRedes">Contacto y Redes Sociales</a></li>
 				</ul> 
 			</div>
 		</div>
 	</nav>
 	<header class="contenedorLogo container-fluid">
 		<div class="row">
-			<img class="w-100 " src="img/fondo.png">
+			<img class="w-100 img-fluid" src="img/fondo.png">
 		</div>
 	</header>
 
@@ -59,6 +58,16 @@
 			</div>
 		</section>
 		<hr>
+
+		<div class="col-12 align-self-md-center">
+			<div class="embed-responsive embed-responsive-16by9">
+				  <iframe class="embed-responsive-item p-1 p-lg-3" 
+				  	src="https://www.youtube.com/embed/Vxr7z_CHsFY" allowfullscreen>	  		
+				  </iframe>
+			</div>
+  		</div>
+		<hr>
+
 		<section class="row">
 			<div class="col-12">
 				<h3 class="tituloTres text-center">Menú de los bigotes de panini:</h3>
@@ -66,7 +75,7 @@
 		</section>
 		<section class="titulosBotones row mt-2">
 			
-			<div class="col-12 d-flex justify-content-center">
+			<div class="col-12 d-flex justify-content-center img-responsive">
 				<button id="crepasDulces" type="button" class="btn btn-danger btn-lg ">Crepas Dulces</button>
 			</div>
 			<div class="col-12 d-flex mt-2 justify-content-center">
@@ -78,9 +87,18 @@
 			<div class="col-12 d-flex mt-2 justify-content-center">
 				<button id="cafe" type="button" class="btn btn-danger btn-lg px-5 ">Café</button>
 			</div>
+
 			<div class="col-12 d-flex justify-content-center mt-2">
-				<button id="menuCompleto" type="button" class="btn btn-danger btn-lg">Menú Completo</button>
+				<button id="crepasHelado" type="button" class="btn btn-danger btn-lg">Crepas Helado</button>
 			</div>
+
+			<div class="col-12 d-flex justify-content-center mt-2">
+				<button id="frapes" type="button" class="btn btn-danger btn-lg">Frapes</button>
+			</div>
+
+			<!--div class="col-12 d-flex justify-content-center mt-2">
+				<button id="menuCompleto" type="button" class="btn btn-danger btn-lg">Menú Completo</button>
+			</div -->
 		</section>
 
 		<div class="row  mt-3" id="menus">
@@ -97,7 +115,7 @@
 				crepa con helado - $50</p>
 
 				<div class="row d-flex justify-content-center" >
-					<img class="img-fluid px-3 pb-3" src="img/1.JPG" style="border-radius: 70px;">
+					<img class="img-fluid px-3 pb-3" src="img/2.png" style="border-radius: 45px;">
 				</div>		
 			</div>
 
@@ -108,7 +126,7 @@
 				philadelphia manchego jamón - $50 <br>
 				3 quesos jamón - $55</p>
 				<div class="row d-flex justify-content-center" >
-					<img class="img-fluid px-3 pb-3" src="img/2.JPG" style="border-radius: 70px;">
+					<img class="img-fluid px-3 pb-3" src="img/1.png" style="border-radius: 45px;">
 				</div>	
 			</div>
 
@@ -120,7 +138,7 @@
 				jamón serrano - $45<br>
 				carne al pastor - $50 </p>
 				<div class="row d-flex justify-content-center" >
-					<img class="img-fluid px-3 pb-3" src="img/3.JPG" style="border-radius: 70px;">
+					<img class="img-fluid px-3 pb-3" src="img/3.png" style="border-radius: 45px;">
 				</div>	
 			</div>
 
@@ -133,16 +151,48 @@
 				té - $15ch  - $20grn<br>
 				frapes - $30grn </p>
 				<div class="row d-flex justify-content-center" >
-					<img class="img-fluid px-3 pb-3" src="img/4.JPG" style="border-radius: 70px;">
+					<img class="img-fluid px-3 pb-3" src="img/4.png" style="border-radius: 45px;">
 				</div>	
 			</div>
 
-			<div class="col-12 d-flex justify-content-center">
-				<img id="cero" src="img/menu.jpg" class="w-100" style="display: block;">
+			<div id="cinco" class="col-12 pt-2 text-center text-uppercase font-weight-bold" style="display: none;">
+				<h4 class="text-center font-weight-bold">Crepas con Helado</h4>
+				<p> Crepas con helado - $50 </p>
+				<div class="row d-flex justify-content-center" >
+					<img class="img-fluid px-3 pb-3" src="img/5.png" style="border-radius: 45px;">
+				</div>	
 			</div>
+
+			<div id="seis" class="col-12 pt-2 text-center text-uppercase font-weight-bold" style="display: none;">
+				<h4 class="text-center font-weight-bold">Frapes</h4>
+				<p> Frapes - $50 </p>
+				<div class="row d-flex justify-content-center" >
+					<img class="img-fluid px-3 pb-3" src="img/6.png" style="border-radius: 45px;">
+				</div>	
+			</div>
+
+			<!--div class="col-12 d-flex justify-content-center">
+				<img id="cero" src="img/menu.jpg" class="w-100" style="display: block;">
+			</div -->
 		</div>
+<hr>
+		<section class="row">
+			<div class="col-12 mt-2">
+				<h3 class="text-center">Paquetes Para Eventos Privados</h3>
+				<h5 class="text-center">Contactanos</h5>
+
+				<div class="row d-flex justify-content-center">
+					<a href="https://api.whatsapp.com/send?phone=5215561739703&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Los%20paquetes%20para%20eventos%20privados%20de%20los%20Bigotes%20de%20Panini">
+  						<img class="img-fluid" src="img/whatsapp.png" style="width: 80px;"></a>
+				</div>
+
+			</div>
+		</section>
+
+		<hr>
 <br>
 		<div class="row">
+			<div class="col-12 text-center"><h4>Ubicación</h4></div><br>
 			<iframe class="w-100 mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3766.823036291831!2d-99.0749490853326!3d19.24654268699031!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ce05bc37cccdb1%3A0x24127d05eb31b480!2sLos%20bigotes%20de%20panini!5e0!3m2!1ses-419!2smx!4v1617061828348!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 		</div>
 	</article>
