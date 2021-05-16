@@ -23,10 +23,16 @@
 
   	<!-- ARCHIVOS CSS PERSONALIZADOS -->
   	<link type="text/css" rel="stylesheet" href="css/estilos.css">
+
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+  	<!-- ARCHIVO SCROLLREVEAL --> 
+    <script src="https://unpkg.com/scrollreveal"></script>
+
   	<title>Los Bigotes de Panini</title>
 </head>
 <body>
-
+	<!-- BARRA DE NAVEGACION (MENÚ) --> 
 	<nav class="navbar navbar-dark navbar-expand-md">
 		<div class="container">
 			<button type="button" class="navbar-toggler mr-auto ml-auto" data-toggle="collapse" 
@@ -42,23 +48,34 @@
 			</div>
 		</div>
 	</nav>
-	<header class="contenedorLogo container-fluid">
+	<!--header class="contenedorLogo container-fluid">
 		<div class="row">
 			<img class="w-100 img-fluid" src="img/fondo.png">
 		</div>
-	</header>
+	</header-->
 
+	<!-- FONDO BIGOTES DE PANINI --> 
+	<div> 
+		<picture id="animacionFondo">
+			<source class="contenedorImagen" srcset="img/fondo-480.png" media="(max-width: 480px)">
+			<source class="contenedorImagen" srcset="img/fondo-800.png" media="(max-width: 800px)">
+			<img class="contenedorImagen" src="img/fondo.png">
+		</picture>
+	</div>
+
+	<!-- TITULO PRINCIPAL BIGOTES DE PANINI -->
 	<article class="contenedorMenu container mt-1 pt-4 px-3">
 		<section class="row">
 			<div class="col-12">
-				<h1 class="titulo text-center">Los Bigotes de Panini</h1>
-				<h2 class="tituloDos text-center">Crepas, paninis, café y frapes.</h2>
+				<h1 class="titulo text-center" id="animacionTitulo">Los Bigotes de Panini</h1>
+				<h2 class="tituloDos text-center" id="animacionSubTitulo">Crepas, paninis, café y frapes.</h2>
 				<p class="text-center mt-3">Es un negocio emergente, donde podras consumir unos ricos
 				postres en uno de los principales lugares turisticos de la ciudad de México.</p>
 			</div>
 		</section>
 		<hr>
 
+		<!-- VIDEO DE YOUTUBE --> 
 		<div class="col-12 align-self-md-center">
 			<div class="embed-responsive embed-responsive-16by9">
 				  <iframe class="embed-responsive-item p-1 p-lg-3" 
@@ -69,13 +86,15 @@
 		<hr>
 
 		<section class="row">
-			<div class="col-12">
+			<div class="col-12" id="animacionMenuTitulo">
 				<h3 class="tituloTres text-center">Menú de los bigotes de panini:</h3>
 			</div>
 		</section>
+
+		<!-- BOTONES DEL MENU --> 
 		<section class="titulosBotones row mt-2">
 			
-			<div class="col-12 d-flex justify-content-center img-responsive">
+			<div class="col-12 d-flex justify-content-center img-responsive" id="animacionCrepaDulce">
 				<button id="crepasDulces" type="button" class="btn btn-danger btn-lg ">Crepas Dulces</button>
 			</div>
 			<div class="col-12 d-flex mt-2 justify-content-center">
@@ -101,6 +120,7 @@
 			</div -->
 		</section>
 
+		<!-- MENÚ --> 
 		<div class="row  mt-3" id="menus">
 			<div id="uno" class="col-12 pt-2 text-center text-uppercase font-weight-bold" style="display: none;">
 				<h4 class="text-center font-weight-bold">crepas dulces</h4>
@@ -176,6 +196,8 @@
 			</div -->
 		</div>
 <hr>
+
+	<!-- SECCION EVENTOS PRIVADOS --> 
 		<section class="row">
 			<div class="col-12 mt-2">
 				<h3 class="text-center">Paquetes Para Eventos Privados</h3>
@@ -191,6 +213,7 @@
 
 		<hr>
 <br>
+		<!-- UBICACION EN GOOGLE MAPS--> 
 		<div class="row">
 			<div class="col-12 text-center"><h4>Ubicación</h4></div><br>
 			<iframe class="w-100 mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3766.823036291831!2d-99.0749490853326!3d19.24654268699031!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ce05bc37cccdb1%3A0x24127d05eb31b480!2sLos%20bigotes%20de%20panini!5e0!3m2!1ses-419!2smx!4v1617061828348!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
@@ -231,7 +254,9 @@
 	<script src="js/jquery-3.3.1.min.js"></script>
 	<script src="js/popper.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
-
+	<!--ARCHIVO PERSONALIZADO JS -->
 	<script type="text/javascript" src="js/main.js"></script>
+	<!-- ARCHIVO JS ANIMACION --> 
+	<script src="js/animacion.js"></script>
 </body>
 </html>

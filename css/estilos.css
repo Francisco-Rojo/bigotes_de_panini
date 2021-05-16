@@ -7,6 +7,9 @@ body {
 }
 
 
+.contenedorImagen {
+	width: 100%;
+}
 
 #menuRedes {
 	border: solid 2px white;
